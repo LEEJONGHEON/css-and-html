@@ -12,7 +12,13 @@
             display: flex;
             flex-wrap: wrap;
             flex-direction: row;
+            /* 두줄이 다같이 움직임 */
             align-content: center;
+
+            /* 두줄 이상일때 효과 달라짐 */
+            /* 가상의 중앙선으로 item 나누고, 각 item이 따로 행동함 */
+            /* align-items: center; */
+            justify-content: center;
             height: 400px;
         }
         .item {
@@ -22,6 +28,10 @@
             border: 4px dashed red;
             border-radius: 10px;
             font-size: 40px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
     </style>
 </head>

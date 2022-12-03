@@ -24,24 +24,31 @@
             color: red;
         }
 
+        /* 점수가 같을경우 밑에 쓴내용이 우선 */
 
+        /* 점수는 합산으로 계산 */
 
+        /* 1 */
         h1 {
             color: lightcoral;
         }
+        /* 11 */
         .bbb h1 {
             color: orangered;
         }
+        /* 101 */
         #aaa h1 {
             color: gray;
         }
+        /* 112 */
         #aaa div.bbb h1 {
             color: greenyellow;
         }
+        /* 111 */
         #aaa .bbb h1 {
             color: tomato;
         }
-
+        /* 12 */
         div.bbb > h1 {
             color: violet;
         }

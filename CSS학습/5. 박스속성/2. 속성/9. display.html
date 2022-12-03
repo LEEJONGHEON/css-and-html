@@ -29,9 +29,12 @@
             display: inline-block;
         }
         .box input:nth-child(3) {
+            /*  요소 사라짐 */
+            /* 댓글창 닫기 */
             /* display: none; */
 
             /* 투명도 설정: 0% - 0에 가까울수록 투명 최대값 1 */
+            /* 자리 차지하지만, 화면에 표시 x */
             opacity: 0;
         }
 
@@ -45,6 +48,7 @@
     <a href="#">로그인</a>
 
     <div class="box">
+        <!-- 수평 배치 인라인 -->
         <input type="text" value="1">
         <input type="text" value="2">
         <input type="text" value="3">

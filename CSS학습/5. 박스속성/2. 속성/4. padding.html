@@ -16,10 +16,13 @@
             /* 패딩속성은 좌우지정시 가로길이가 그만큼
                늘어나고, 상하지정시 세로길이가 늘어남.
             */
+            /* 부모가 이동하면 자식도 같이이동 */
             margin-left: 100px;
+            /* 패딩시 크기 늘어남, 패딩은 내부값을 밀어내는데 사용 */
             padding-left: 100px;
 
             margin-top: 50px;
+            /* 새롭게 자식 태그 위로 50px 위로생성(새로생성) */
             padding-top: 50px;
         }
         .box {
@@ -31,7 +34,7 @@
             padding-top: 30px;
             padding-left: 20px;
 
-            padding: 30px 0 0 20px;
+            /* padding: 30px 0 0 20px; */
 
             /* 패딩사용으로 길이가 증가하는 것을 방지 */
             box-sizing: border-box;

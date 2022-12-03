@@ -12,12 +12,19 @@
             display: flex;
             /* flex-wrap: wrap;
             flex-direction: column-reverse; */
+            /* flex-wrap : wrap 유지하면서 너무길어지면 다음길이로 이동 */
+            /* flex-direction : 방향 */
             flex-flow: wrap row-reverse;
         }
         .item {
-            width: 150px;
+            /* wrap 사용해서 설정 */
+            /* 25% 한줄에 4개, 33% 한줄에 3개 */
+            /* width값 조절로 한줄에 item 개수 제한 */
+            width: 25%;
             height: 100px;
             border: 4px dashed red;
+            /* border size가 크기 계산에 방해안하도록 설정 */
+            box-sizing: border-box; 
             border-radius: 10px;
             font-size: 40px;
         }
@@ -26,6 +33,16 @@
 <body>
     
     <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
         <div class="item">A</div>
         <div class="item">B</div>
         <div class="item">C</div>
