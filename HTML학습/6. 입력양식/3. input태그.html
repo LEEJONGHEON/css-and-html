@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="#">
+
+        # 이름: <input type="text" value="김철수" disabled> <br>
+        # 비밀번호: <input type="password"> <br>
+        # 이메일: <input type="email" placeholder="aaa@bbb.com"> <br>
+
+        # 취미:
+        <input type="checkbox"> 게임
+        <input type="checkbox" checked> 축구
+        <input type="checkbox" disabled> 공연관람 <br>
+
+        # 메일 수신 여부:
+        <input type="radio" name="mail-verify" checked> 예 
+        <input type="radio" name="mail-verify"> 아니오 <br>
+
+        # 파일: <input type="file" multiple> <br>
+
+        <input type="range" min="0" max="5" value="3"> <br>
+
+        # 주문 수량:
+        <input type="number" value="1" max="10"> <br>
+
+
+        <!-- 사용자 몰래 서버로 전송할 데이터 -->
+        <input type="hidden" name="abc" value="메롱">
+
+        <button type="button">그냥버튼</button>
+        <button type="reset">초기화버튼</button>
+        <button type="submit">전송버튼</button>
+
+    </form>
+
+</body>
+</html>

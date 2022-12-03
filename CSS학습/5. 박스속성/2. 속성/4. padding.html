@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .container {
+            width: 500px;
+            height: 500px;
+            background: orange;
+
+            /* 패딩속성은 좌우지정시 가로길이가 그만큼
+               늘어나고, 상하지정시 세로길이가 늘어남.
+            */
+            margin-left: 100px;
+            padding-left: 100px;
+
+            margin-top: 50px;
+            padding-top: 50px;
+        }
+        .box {
+            width: 250px;
+            height: 250px;
+            background: tomato;
+            color: white;
+            font-size: 2em;
+            padding-top: 30px;
+            padding-left: 20px;
+
+            padding: 30px 0 0 20px;
+
+            /* 패딩사용으로 길이가 증가하는 것을 방지 */
+            box-sizing: border-box;
+
+        }
+    </style>
+
+</head>
+<body>
+    
+
+    <div class="container">
+        <div class="box">안녕하세요안녕하세요안녕하세요안녕하세요안녕하세요</div>
+    </div>
+
+</body>
+</html>

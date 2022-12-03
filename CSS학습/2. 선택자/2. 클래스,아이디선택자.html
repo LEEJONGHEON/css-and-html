@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .orang {
+            color: orange;
+        }
+
+        #big {
+            font-size: 1.5em;
+        }
+
+        .reverse {
+            transform: rotate(180deg);
+            width: fit-content;
+        }
+
+        .shadow {
+            text-shadow: 1px 1px 6px #333;
+        }
+
+        p, span {
+            font-style: italic;
+        }
+        h1,h2,h3,h4,h5,h6 {
+            font-weight: normal;
+        }
+
+        .orang, #big {
+            
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <!-- div>(ul>li*3)+div+p+span -->
+    <div class="shadow">
+        <ul>
+            <li>사과</li>
+            <li class="reverse">딸기</li>
+            <li class="orang reverse" id="big">오렌지</li>
+        </ul>
+        <div class="reverse">당근</div>
+        <p>토마토</p>
+        <span class="orang">오렌지</span>
+
+
+    </div>
+
+</body>
+</html>

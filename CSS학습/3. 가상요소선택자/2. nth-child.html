@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        #fruits li:first-child {
+            color: red;
+        }
+
+        #fruits li:last-child {
+            color: yellowgreen;
+        }
+
+        #fruits li:nth-child(5) {
+            color: yellow;
+        }
+
+        /* 홀수번째 li만 선택 : 2n+1 */
+        #fruits li:nth-child(odd) {
+            background: aqua;
+        }
+        /* 짝수번째 li만 선택 : 2n */
+        #fruits li:nth-child(even) {
+            background: violet;
+        }
+
+        /* 1, 4, 7번째 li만 선택 */
+        #fruits li:nth-child(3n + 1) {
+            font-style: italic;
+        }
+
+        /* li중에 class가 orang인 요소 빼고 전부 */
+        #fruits li:not(.orang) {
+            font-size: 1.5em;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <!-- ul#fruits>li*7 -->
+    <ul id="fruits">
+        <li>딸기</li>
+        <li>사과</li>
+        <li class="orang">오렌지</li>
+        <li>망고</li>
+        <li>바나나</li>
+        <li>자몽</li>
+        <li>라임</li>
+    </ul>
+
+</body>
+</html>
